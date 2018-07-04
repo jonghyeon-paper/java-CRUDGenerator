@@ -8,7 +8,13 @@ public class A {
 		parameter.setExtraData("99999");
 		
 		CRUDGenerator test = new CRUDGenerator(SampleTable.class);
-		System.out.println(test.createSelectQuery(parameter));
+		System.out.println(test.generateSelectQuery(parameter));
+		System.out.println("\n");
+		System.out.println(test.generateInsertQuery(parameter));
+		System.out.println("\n");
+		System.out.println(test.generateUpdateQuery(parameter));
+		System.out.println("\n");
+		System.out.println(test.generateDeleteQuery(parameter));
 	}
 
 }
